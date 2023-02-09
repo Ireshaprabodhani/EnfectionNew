@@ -1,0 +1,13 @@
+.navbar_brand img{
+    width: 30PX;
+    height: auto;
+}
+#header{
+    background-color: rgb(222, 214, 230);
+}
+.nav-link{
+    color: black;
+    font-weight: 60px;
+    font-family: sans-serif;
+    font-size: 16px;
+}

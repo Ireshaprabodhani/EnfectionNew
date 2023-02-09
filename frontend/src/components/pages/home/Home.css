@@ -1,0 +1,72 @@
+body{
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+.home-container{
+   height: 100vh;
+   background-image: url("../../../images/naviagate2.gif");
+   background-color: #cccccc;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+}
+.main-title h1{
+    color: yellowgreen;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.animated-text {
+  display: inline-block;
+}
+
+.animated-text span {
+  display: inline-block;
+  animation: animationName 1s ease-out forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes animationName {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animated-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.animated-text span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.w{
+    color: rgb(255, 0, 85);
+}
+.e{
+    color: aqua;
+}
+.l{
+    color: blueviolet;
+}
+.c{
+    color: rgb(122, 122, 243);
+}
+.o{
+    color: rgb(121, 187, 149);
+}
+.m{
+     color: rgb(231, 120, 203);
+}
+.E{
+    color: rgb(231, 229, 120);
+}
+.main-title{
+    padding-top: 70px;
+}
