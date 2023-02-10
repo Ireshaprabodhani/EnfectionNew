@@ -1,0 +1,9 @@
+.login-container{
+   height: 100vh;
+   background-image: url("../../../images/background-image-hd.jpg");
+   background-color: #cccccc;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   /* filter: brightness(80%); */
+}

@@ -4,33 +4,44 @@ body{
    
 }
 
-.home-container{
+.bg-container{
    height: 100vh;
-   background-image: url("../../../images/naviagate2.gif");
+   background-image: url("../../../images/bg.jpg");
    background-color: #cccccc;
    background-repeat: no-repeat;
    background-size: cover;
    overflow: hidden;
-}
-.main-title h1{
-    color: yellowgreen;
-    font-size: 80px;
-    display: flex;
-    justify-content: center;
+   filter: brightness(80%);
 }
 
 .animated-text {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-wrap: wrap;
 }
 
 .animated-text span {
   display: inline-block;
-  animation: animationName 1s ease-out forwards;
-  transform: translateY(-100%);
+  animation: animationName 2s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(-30px);
+  width: 17%;
+  text-align: center;
+  font-size: 80px;
+  color: #FFFFFFFF;
+  margin: 0 10px;
+  font-family:serif;
 }
 
 @keyframes animationName {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -40,33 +51,46 @@ body{
 }
 
 .animated-text span:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.6s;
 }
 
 .animated-text span:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 0.8s;
 }
-.w{
-    color: rgb(255, 0, 85);
-}
-.e{
-    color: aqua;
-}
-.l{
-    color: blueviolet;
-}
-.c{
-    color: rgb(122, 122, 243);
-}
-.o{
-    color: rgb(121, 187, 149);
-}
-.m{
-     color: rgb(231, 120, 203);
-}
-.E{
-    color: rgb(231, 229, 120);
-}
+
+
 .main-title{
     padding-top: 70px;
+    
+}
+.button_group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+}
+.button-login{
+  width: 200px;
+  height: auto;
+  background-color: yellow;
+  text-align: center;
+  border-radius: 15px;
+
+}
+.button-login Button{
+   color: black;
+}
+.button-signup{
+  width: 200px;
+   height: auto;
+  text-align: center;
+  margin-left: 50px;
+  border-radius: 15px;
+  border: 2px solid red;
+}
+.button-signup Button{
+  color: white;
+}
+.to{
+  padding-left: 110px;
 }
